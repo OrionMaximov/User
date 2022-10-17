@@ -1,0 +1,17 @@
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    text-align: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem auto;
+}
+.alignRight{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }

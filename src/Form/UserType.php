@@ -25,7 +25,7 @@ class UserType extends AbstractType
             ->add('confirmPassword',PasswordType::class)       
             ->add('birthdate',DateType::class,['widget'=>'single_text'])
             ->add('avatar',FileType::class,[
-                'label'=>'photo de profil (Jpg,PNG)',
+                'label'=>'Photo de profil (Jpg,PNG)',
                 'data_class'=>null,
                 'required' => false
                 ])

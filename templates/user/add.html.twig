@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello World{% endblock %}
+
+{% block body %}
+
+<div class="form-control">
+    {{form_start(formulaire)}}
+        <div class="form-group">
+             {{ form_label(formulaire.nom) }}
+             {{form_widget(formulaire.nom)}}
+        </div>
+        <div class="form-group">
+            {{ form_label(formulaire.prenom) }}
+            {{form_widget(formulaire.prenom)}}
+        </div>
+        <div class="form-group">
+             {{ form_label(formulaire.email) }}
+             {{form_widget(formulaire.email)}}
+        </div>
+        <div class="form-group">
+             {{form_label (formulaire.birthdate,'date m/d/Y')}}
+             {{form_widget(formulaire.birthdate)}}
+        </div> 
+        <div class="form-group">
+             {{form_label (formulaire.password)}}
+             {{form_widget (formulaire.password)}}
+        </div>
+        <div class="form-group">
+            {{ form_label(formulaire.confirmPassword) }}
+            {{form_widget(formulaire.confirmPassword)}}
+        </div>
+        <div class="form-group">
+             {{form_label (formulaire.avatar)}}
+             {{form_widget (formulaire.avatar)}}
+        </div>
+
+        <div class="alignRight">
+            <div><button type="submit" class="btn btn-warning">Inscription</button></div> 
+            <div><button type="button" class="btn btn-primary"><a href="{{path('app_user')}}">Vous avez déjà un compte?</a></button></div> 
+        </div>
+    
+    {{form_end(formulaire)}} 
+</div>
+
+{% endblock %}
