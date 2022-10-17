@@ -17,4 +17,8 @@ class UserController extends AbstractController
             
         ]);
     }
+    /**
+     * @Route("/inscription", name="inscription")
+     * 
+     */
 }
